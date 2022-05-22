@@ -43,10 +43,10 @@ syn match asmImmediate "#<\d\+\>"
 syn match asmImmediate "#>\(0x\|\$\)\x\+\>"
 syn match asmImmediate "#>\d\+\>"
 
-syn match asm4510BitOps "bbr[0-7]"
-syn match asm4510BitOps "bbs[0-7]"
-syn match asm4510BitOps "rmb[0-7]"
-syn match asm4510BitOps "smb[0-7]"
+syn match asm4510BitOps "\<bbr[0-7]\>"
+syn match asm4510BitOps "\<bbs[0-7]\>"
+syn match asm4510BitOps "\<rmb[0-7]\>"
+syn match asm4510BitOps "\<smb[0-7]\>"
 
 if !exists("did_mega65_acme_syntax_inits")
   let did_mega65_acme_syntax_inits = 1
