@@ -30,7 +30,7 @@ syn match asmLabel "\<[a-z_+-.][a-z0-9_+-]*\>"
 
 syn match decNumber "\<\d\+\>"
 syn match hexNumber "\(0x\|\$\)\x\+\>"
-syn match binNumber	"%[01]\+\>"
+syn match binNumber "%[01]\+\>"
 
 syn match asmImmediate "#\(0x\|\$\)\x\+\>"
 syn match asmImmediate "#\d\+\>"
@@ -51,27 +51,27 @@ syn match asm4510BitOps "smb[0-7]"
 if !exists("did_mega65_acme_syntax_inits")
   let did_mega65_acme_syntax_inits = 1
 
-  hi link asm6510Illegal	Debug
-  hi link asm6502Mnemonics	None
-  hi link asm6502Index		None
-  hi link asm6502Branch		None
-  hi link asm4510Mnemonics	None
-  hi link asm45GS02Mnemonics	None
-  hi link asm4510BitOps	None
-  hi link asmString		String
-  hi link asmComment		Comment
-  hi link asmMacroCall		Type
-  hi link asmReferenceCall	Debug
-  hi link asmPseudoop		Statement
-  hi link asmLabel		Macro
+  hi link asm6510Illegal Debug
+  hi link asm6502Mnemonics None
+  hi link asm6502Index None
+  hi link asm6502Branch None
+  hi link asm4510Mnemonics None
+  hi link asm45GS02Mnemonics None
+  hi link asm4510BitOps None
+  hi link asmString String
+  hi link asmComment Comment
+  hi link asmMacroCall Type
+  hi link asmReferenceCall Debug
+  hi link asmPseudoop Statement
+  hi link asmLabel Macro
 
-  hi link asmTodo		Debug
+  hi link asmTodo Debug
 
-  hi link asmImmediate		Number
+  hi link asmImmediate Number
 
-  hi link hexNumber		Number
-  hi link binNumber		Number
-  hi link decNumber		Number
+  hi link hexNumber Number
+  hi link binNumber Number
+  hi link decNumber Number
 endif
 
 let b:current_syntax = "mega65-acme"
