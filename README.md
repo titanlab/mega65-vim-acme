@@ -1,5 +1,5 @@
-# vim-acme
-syntax-highlighting for the acme 6502-family assembler
+# mega65-vim-acme
+Syntax highlighting for the ACME 6502/4510/45GS02-family assembler
 
 ## Install
 
@@ -7,7 +7,7 @@ syntax-highlighting for the acme 6502-family assembler
 
 Put
 ```vim
-Plug 'leissa/vim-acme'
+Plug 'titanlab/mega65-vim-acme'
 ```
 into your plugged-section in your ```~/.vimrc``` and run
 ```vim
@@ -17,7 +17,7 @@ into your plugged-section in your ```~/.vimrc``` and run
 ### Other Users
 
 ```bash
-git clone git@github.com:leissa/vim-acme.git
+git clone git@github.com:titanlab/mega65-vim-acme.git
 ln -s vim-acme/ftdetect/acme.vim ~/.vim/ftdetect/.
 ln -s vim-acme/syntax/acme.vim ~/.vim/syntax/.
 ```
